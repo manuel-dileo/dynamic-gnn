@@ -10,9 +10,9 @@ This work is largely inspired by ["ROLAND: Graph Learning Framework for Dynamic 
 
 ## Embedding update module
 You can update the node embeddings along the time snapshosts in different ways. You can use the parameter `update` during the inizialization of the model to decide which kind of embedding update module will act. Below we will refer to $H_{t}^{(l)}$ as the node embeddings at gnn-layer $l$ and time snapshot $t$.
-- Setting `update` to `mlp`, node embeddings are updated by a 1-layer MLP; $H_{t}^{(l)} = MLP(CONCAT(H_{t-1}^{(l)},H_{t}^{(l)}))$.
+- Setting `update` to `mlp`, node embeddings are updated by a 1-layer MLP (default option); $H_{t}^{(l)} = MLP(CONCAT(H_{t-1}^{(l)},H_{t}^{(l)}))$.
 - Setting `update` to `gru`, node embeddings are updated by a GRU Cell having $H_{t-1}^{(l)}$ as hidden state and $H_{t}^{(l)}$ as input.
-- Setting `update` to `learnable`, node embeddings are updated using a weighted sum $H_{t}^{l} = \tau  H_{t-1}^{(l)} + (1-\tau) H_{t}^{(l)}$ where $\tau$ is a learnable parameter. Setting `update` to a number between zero and one results in a constant value for $\tau$.
+- Setting `update` to `learnable`, node embeddings are updated using a weighted sum $H_{t}^{(l)} = \tau  H_{t-1}^{(l)} + (1-\tau) H_{t}^{(l)}$ where $\tau$ is a learnable parameter. Setting `update` to a number between zero and one results in a constant value for $\tau$.
 
 ## Running example
 A complete running example with datasets, train and test procedures will be available soon.
