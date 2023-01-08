@@ -6,7 +6,7 @@ from torch_geometric.nn import GCNConv, Linear
 import numpy as np
 
 class ROLANDGNN(torch.nn.Module):
-    def __init__(self, input_dim, num_nodes, dropout=0.0, update='moving', loss=BCEWithLogitsLoss):
+    def __init__(self, input_dim, num_nodes, dropout=0.0, update='mlp', loss=BCEWithLogitsLoss):
         
         super(ROLANDGNN, self).__init__()
         #Architecture: 
