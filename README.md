@@ -6,7 +6,8 @@ The model is designed for solving link prediction tasks on temporal attributed d
 This project is work in progress.
 
 ## Architecture overview
-This work is largely inspired by ["ROLAND: Graph Learning Framework for Dynamic Graphs"](https://dl.acm.org/doi/abs/10.1145/3534678.3539300). To have a general idea of how our model works, you can refer to the paper by You et al.
+This work is largely inspired by ["ROLAND: Graph Learning Framework for Dynamic Graphs"](https://dl.acm.org/doi/abs/10.1145/3534678.3539300). To have a general idea of how our model works, you can refer to the paper by You et al. The figure below shows the running architecture of our dynamic gnn model.
+![GNN Architecture](GNNArchitecture.drawio.png "Dynamic GNN based on ROLAND framework").
 
 ## Embedding update module
 You can update the node embeddings along the time snapshosts in different ways. You can use the parameter `update` during the inizialization of the model to decide which kind of embedding update module will act. Below we will refer to $H_{t}^{(l)}$ as the node embeddings at gnn-layer $l$ and time snapshot $t$.
