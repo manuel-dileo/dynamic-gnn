@@ -33,7 +33,7 @@ class ROLANDGNN(torch.nn.Module):
         self.update = update
         if update=='moving':
             self.tau = torch.Tensor([0])
-        elif update=='learnable':
+        elif update=='lwa':
             self.tau = torch.nn.Parameter(torch.Tensor([0]))
         elif update=='gru':
             self.gru1 = GRUCell(hidden_conv_1, hidden_conv_1)
