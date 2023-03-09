@@ -20,6 +20,6 @@ A complete running example with datasets, train and test procedures is available
 This model was used in the following works:
 - Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks, submitted at the Machine Learning Journal - Special Issue on Discovery Science. 
 
-## BOSN Data
-Due to privacy reasons, we can't release the dataset related to Steemit. To patch this problem, we are working to provide an anonymized version of our data in agreement with the ethics committee. In the meantime, for data gathering you can refer to the [Steemit API](https://developers.steem.io/) documentation.
+## Steemit Data
+Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API](https://developers.steem.io/) documentation.
 
