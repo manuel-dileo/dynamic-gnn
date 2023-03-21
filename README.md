@@ -23,3 +23,6 @@ This model was used in the following works:
 ## Steemit Data
 Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API](https://developers.steem.io/) documentation.
 
+## Experiments
+For the experiments presented in "Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks", you can refer to the `Steemit.ipynb` notebook
+
