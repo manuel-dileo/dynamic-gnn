@@ -14,15 +14,15 @@ You can update the node embeddings along the time snapshosts in different ways. 
 - Setting `update` to `lwa` (learnable weighted average), node embeddings are updated using a weighted sum $H_{t}^{(l)} = \tau  H_{t-1}^{(l)} + (1-\tau) H_{t}^{(l)}$ where $\tau$ is a learnable parameter. Setting `update` to a number between zero and one results in a constant value for $\tau$.
 
 ## Running example
-A complete running example with datasets, train and test procedures is available on `BitcoinOTC-Example.ipynb` notebook. Information about the dataset can be found in ["EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs"](https://arxiv.org/pdf/1902.10191.pdf). I ran the ROLAND-based model on all the 138 snapshots using a constant encoder as node features and a GRU Cell as embedding update module. The results along the snapshots and over time are reported in AUPRC as suggested in ["Evaluating Link Prediction methods"](https://arxiv.org/pdf/1505.04094.pdf). 
+A complete running example with datasets, train and test procedures is available on `BitcoinOTC-Example.ipynb` notebook. Information about the dataset can be found in ["EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs"](https://arxiv.org/pdf/1902.10191.pdf). I ran the ROLAND-based model on all the 138 snapshots using a constant encoder as node features and a GRU Cell as embedding update module. The results along the snapshots and over time are reported in AUPRC as suggested in ["Evaluating Link Prediction methods"](https://arxiv.org/pdf/1505.04094.pdf). This running example serves also to show the scalability of the proposed solution on a dataset with a high number of snapshots.
 
 ## Paper
 This model was used in the following works:
 - Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks, submitted at the Machine Learning Journal - Special Issue on Discovery Science. 
 
 ## Steemit Data
-Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are use to feed the models. For data gathering you can refer to the [Steemit API](https://developers.steem.io/) documentation.
+Due to privacy reasons on personal data like username and textual content, we can't release the dataset related to Steemit. To patch this problem, we provide an anonymized version of our data. This version represents the final mathematical objects that are used to feed the models. For data gathering, you can refer to the [Steemit API](https://developers.steem.io/) documentation.
 
 ## Experiments
-For the experiments presented in "Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks", you can refer to the `Steemit.ipynb` notebook
+For the experiments presented in "Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks", you can refer to the `Steemit.ipynb` notebook. For the experiments concerning scalability and generality of the solution, you can refer to the "Running example" section of this repo, as well as this [other work](https://github.com/manuel-dileo/t3gnn)
 
