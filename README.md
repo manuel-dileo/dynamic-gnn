@@ -1,10 +1,12 @@
 # Dynamic-gnn
-PyTorch Geometric implementation of a dynamic gnn based on Roland framework.
+PyTorch Geometric implementation of a dynamic gnn based on the Roland framework.
 
 The model is designed for solving link prediction tasks on temporal attributed directed graph. 
 
+The repository contains the work behind the paper ["Temporal Graph Learning for Dynamic Link Prediction with Text in Online Social Networks"](https://doi.org/10.1007/s10994-023-06475-x).
+
 ## Architecture overview
-This work is largely inspired by ["ROLAND: Graph Learning Framework for Dynamic Graphs"](https://dl.acm.org/doi/abs/10.1145/3534678.3539300). To have a general idea of how our model works, you can refer to the paper by You et al. The figure below shows the running architecture of our dynamic gnn model.
+The architecture is inspired by ["ROLAND: Graph Learning Framework for Dynamic Graphs"](https://dl.acm.org/doi/abs/10.1145/3534678.3539300). To have a general idea of how our model works, you can refer to the paper by You et al. The figure below shows the running architecture of our dynamic gnn model.
 ![GNN Architecture](GNNArchitecture.drawio.png "Dynamic GNN based on ROLAND framework").
 
 ## Embedding update module
